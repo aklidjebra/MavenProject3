@@ -17,16 +17,19 @@ public class Homepage2 extends CommonAPI {
     @FindBy(id = "twotabsearchtextbox")
     WebElement inputSearch;
 
+
+
     public void setOrderTab(){
-        orderTab.click();
+        System.out.println(driver.getCurrentUrl());
+       // orderTab.click();
     }
 
-    public void setHamburger(){
-        if (hamburger.isDisplayed()){
-            Assert.assertTrue(true);
-            hamburger.click();
-        }
-    }
+//    public void setHamburger(){
+//        if (hamburger.isDisplayed()){
+//            Assert.assertTrue(true);
+//            hamburger.click();
+//        }
+//    }
 
     public void setInputSearch(String name) throws InterruptedException{
         if(inputSearch.isEnabled()){
